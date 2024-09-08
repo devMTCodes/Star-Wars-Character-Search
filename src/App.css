@@ -1,11 +1,19 @@
-body{
-  display: flex;
-  align-items: center;
+body {
+  margin: auto;
+  width: 100%;
+  border: 3px solid yellow;
+  padding: 10px;
   justify-content: center;
-  background-color: #000;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  overflow: hidden;
 }
 
 h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffe81f
 }
 

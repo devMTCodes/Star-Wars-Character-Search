@@ -19,7 +19,9 @@ const Search = () => {
     setLoading(true);
 
     try {
-      const response = await axios.get(`https://swapi.dev/api/people/?search=${searchQuery}`);
+      const response = await axios.get(
+        `https://swapi.dev/api/people/?search=${searchQuery}`
+      );
       const characters = response.data.results;
       await setAttributes(characters);
     } catch (error) {
@@ -80,7 +82,7 @@ const Search = () => {
             placeholder="Search Character.."
             type="text"
           />
-          <button className="btn btn-primary">Search</button>
+          <button className="btn btn-warning">Search</button>
         </div>
       </form>
       {!response && <p>No Results</p>}
